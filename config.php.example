@@ -2,8 +2,8 @@
 $pdo_database = 'mcstats';
 $pdo_host = '127.0.0.1';
 $pdo_port = 3306;
-$pdo_user = 'root';
-$pdo_pass = 'sunnyside666';
+$pdo_user = 'Oh';
+$pdo_pass = ':( There no password...';
 //Links table
 $pdo_stats_table = 'stats';
 $pdo_players_table = 'players';
