@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SunnySide Stats</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+<style>
+        body{
+            width: 1140px;
+            height: 1932px;
+            margin: 0 auto;
+        }
+    </style>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">SunnySide Stats</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">首页</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <nav>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="#">统计</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#">玩家</a>
+                    </li>
+                    <li class="breadcrumb-item active">
+                        ${Name}
+                    </li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <!--<img href="./player/${uuid}/body.png">-->
+			<iframe width="185" height="255" src="./skinRender.php?uuid=${uuid}"></iframe>
+        </div>
+        <div class="col-md-5">
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action active">用户信息</a>
+                <div class="list-group-item">
+                    <h4>${TotalOnline}</h4>
+                    <p class="list-group-item-text text-muted">共计在线时长</p>
+                </div>
+                <div class="list-group-item">
+                    <h4>${LastOnline}</h4>
+                    <p class="list-group-item-text text-muted">最后在线时间</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-5">
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action active">资金信息</a>
+                <div class="list-group-item">
+                    <h4>${Money}</h4>
+                    <p class="list-group-item-text text-muted">弹珠</p>
+                </div>
+                <div class="list-group-item">
+                    <h4>${Money}</h4>
+                    <p class="list-group-item-text text-muted">阳光点</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <hr />
+            <h4>
+                成就
+            </h4>
+
+            <div class="row">
+                <div class="col-md-12">
+                    ${Achievement}
+                </div>
+            </div>
+            <hr />
+            <h4>
+                统计
+            </h4>
+
+            <div class="row">
+                <div class="col-md-12">
+                    ${Stats}
+                </div>
+            </div>
+            <hr />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            Footer
+        </div>
+    </div>
+</div>
+</body>
+</html>
